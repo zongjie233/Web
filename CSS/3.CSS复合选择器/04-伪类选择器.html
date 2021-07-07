@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>伪类选择器</title>
+    <style>
+      /* 按照lvha顺序进行编写 */
+      /* 1.选择未访问过的链接 a:link */
+      a:link {
+        color: #333;
+      }
+      /* 2.已经点击过的链接 a:visited */
+      a:visited {
+        color: gray;
+      }
+      /* 3.选择鼠标经过的链接 a:hover */
+      a:hover {
+        color: yellowgreen;
+      }
+      /* 4.选择激活状态下的链接 a:active */
+      a:active {
+        color: teal;
+      }
+      a {
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">郑大钱</a>
+    <a href="#">郑大----</a>
+  </body>
+</html>

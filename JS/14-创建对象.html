@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>创建对象</title>
+    <script>
+      function Hero(uname, type, hp, attack) {
+        this.name = uname;
+        this.type = type;
+        this.hp = hp;
+        this.attack = attack;
+      }
+      var lianpo = new Hero("廉颇", "力量型", "500", "近战");
+      var houyi = new Hero("后裔", "射手型", "100", "远程");
+      console.log(lianpo.name);
+      console.log(lianpo.type);
+      console.log(lianpo.hp);
+      console.log(lianpo.attack);
+      console.log(houyi.name);
+      console.log(houyi.type);
+      console.log(houyi.hp);
+      console.log(houyi.attack);
+    </script>
+  </head>
+  <body></body>
+</html>

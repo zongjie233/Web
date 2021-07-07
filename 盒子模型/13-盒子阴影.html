@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>盒子阴影</title>
+    <style>
+      .shadow {
+        width: 300px;
+        height: 300px;
+        background-color: #aaa;
+        margin: 200px auto;
+        /* 参数水平阴影、垂直阴影、模糊距离（虚实）、阴影尺寸、阴影颜色 */
+        /* box-shadow: 10px 10px 10px #ccc; */
+      }
+      /* 鼠标经过盒子时添加阴影 */
+      div:hover {
+        box-shadow: 10px 10px 10px #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shadow"></div>
+  </body>
+</html>

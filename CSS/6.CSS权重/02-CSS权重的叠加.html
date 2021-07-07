@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>权重的叠加</title>
+    <style>
+      li {
+        color: skyblue;
+      }
+      /* 复合选择器具有权重叠加的问题，所以 ul li的权重值为0001+0001=0002 */
+      ul li {
+        color: green;
+      }
+      .nav li {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav">
+      <li>郑大钱</li>
+      <li>郑芳芸</li>
+      <li>郑大傻</li>
+    </ul>
+  </body>
+</html>

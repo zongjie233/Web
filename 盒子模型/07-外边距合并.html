@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .father {
+        width: 400px;
+        height: 400px;
+        background-color: yellow;
+        margin-top: 50px;
+        /* 解决方案 给父元素添加上边框或者内边距或者添加overflow属性*/
+        /* border: 1px solid transparent; */
+        /* overflow: hidden; */
+        /* padding: 1px; */
+      }
+      .son {
+        width: 200px;
+        height: 200px;
+        background-color: teal;
+        /* 两个嵌套关系的块元素，父元素有上外边距的同时子元素也有上外边距，此时父元素会塌陷较大的外边距值。 */
+        margin-top: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+      <div class="son"></div>
+    </div>
+  </body>
+</html>

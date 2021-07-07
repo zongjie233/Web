@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>猜数字</title>
+    <script>
+      function getRandom(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1)) + min; //含最大值，含最小值
+      }
+      function guessNum() {
+        var usrIput = prompt("请输入一个1-10的整数");
+        // var flag = true;
+        var num = 1;
+        ranNum = getRandom(1, 10);
+        while (num <= 2) {
+          if (usrIput > ranNum) {
+            num += 1;
+            alert("数字大了");
+
+            usrIput = prompt("请输入一个1-10的整数");
+          } else if (usrIput < ranNum) {
+            num += 1;
+            alert("数字小了");
+
+            usrIput = prompt("请输入一个1-10的整数");
+          } else {
+            return alert("你猜对了");
+          }
+        }
+        alert("你的次数用完了");
+      }
+      guessNum();
+    </script>
+  </head>
+  <body></body>
+</html>

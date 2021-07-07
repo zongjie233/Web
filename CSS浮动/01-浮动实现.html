@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>浮动实现</title>
+    <style>
+      .left,
+      .right {
+        width: 200px;
+        height: 200px;
+        background-color: skyblue;
+        /* float用于创建浮动框，移动到一边知道左边缘或者右边缘及包含块或另一个浮动框的边缘。 */
+        float: left;
+      }
+      .right {
+        float: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="left">左盒子</div>
+    <div class="right">右盒子</div>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS权重</title>
+    <style>
+      #father {
+        color: red;
+      }
+
+      /* 继承的权重永远是0,所以P标签继承的div的属性权重为0 */
+      p {
+        color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="father">
+      <p>郑大钱</p>
+    </div>
+  </body>
+</html>

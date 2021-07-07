@@ -1,0 +1,16 @@
+{                
+    "files.associations": {
+        "*.ejs": "html",
+        "*.js": "javascript",
+        "*.vue": "html",
+        "*.html": "html"
+    },
+        "emmet.triggerExpansionOnTab": true,
+        "emmet.includeLanguages":{
+        "vue-html":"html",
+        "vue":"html"
+        },
+        "editor.quickSuggestions": null
+        
+     
+}

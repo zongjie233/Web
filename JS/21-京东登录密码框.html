@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>京东密码框</title>
+    <style>
+      .box {
+        width: 400px;
+        border-bottom: 1px red solid;
+        margin: 100px auto;
+      }
+      .box input {
+        width: 350px;
+        outline: none;
+        border: 0;
+        font-size: 20px;
+      }
+      .box img {
+        float: right;
+        width: 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <label for="">
+        <img src="./btn.png" alt="" />
+      </label>
+      <input type="password" name="" id="" />
+      <script>
+        let input = document.querySelector("input");
+        let btn = document.querySelector("label");
+        let flag = 1;
+        btn.onclick = function () {
+          if (flag) {
+            input.type = "text";
+            flag = 0;
+          } else {
+            input.type = "password";
+            flag = 1;
+          }
+        };
+      </script>
+    </div>
+  </body>
+</html>

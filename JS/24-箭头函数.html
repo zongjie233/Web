@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      div {
+        width: 200px;
+        height: 200px;
+        background: skyblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="ad"></div>
+    <script>
+      let ad = document.getElementById("ad");
+      ad.addEventListener("click", function () {
+        //     let _this = this;
+        //     setTimeout(function () {
+        //       //   console.log(this);
+        //       _this.style.background = "yellow";
+        //     }, 2000);
+        //   });
+        setTimeout(() => {
+          this.style.background = "yellow";
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
