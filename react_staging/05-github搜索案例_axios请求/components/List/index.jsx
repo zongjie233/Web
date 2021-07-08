@@ -1,24 +1,9 @@
 import React, { Component } from "react";
-import PubSub from "pubsub-js";
 import "./index.css";
 
 export default class index extends Component {
-  state = {
-    users: [],
-    isFirst: true,
-    isLoading: false,
-    err: "",
-  };
-
-  componentDidMount() {
-    PubSub.subscribe("atguigu", (_, stateObj) => {
-      this.setState(stateObj);
-      // console.log("发出数据");
-    });
-  }
-
   render() {
-    const { users, isFirst, isLoading, err } = this.state;
+    const { users, isFirst, isLoading, err } = this.props;
     return (
       <div className="row">
         {isFirst ? (
