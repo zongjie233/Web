@@ -1,8 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
+// import Example from "./App";
+import Counter from "./App_reducer";
 
 ReactDOM.render(
-  <React.StrictMode>hello</React.StrictMode>,
+  <React.StrictMode>
+    <Counter />
+  </React.StrictMode>,
   document.getElementById("root")
 );
 
